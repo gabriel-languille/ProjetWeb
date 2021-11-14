@@ -9,47 +9,42 @@
 
       nav > ul {
         display: flex;
-        text-align: center ;
         height: var(--hauteur-menu);
-      }
-       
-      nav ul {
         list-style-type:none;
+
       }
+
       
       nav > ul > li {
-        background-color:  #ede8f0 ;
+        display: flex;
+        background-color:  #91b1d6 ;
         position: relative;
-        height: 150%;
+        height: 170%;
         flex: 1;
-      }
+        justify-content: center;
+        align-items: center;
+
+            }
     
-      nav > ul > li > a {
-        position:absolute;
-        top: auto;
-        left: auto;
-      }
+
       
       li a {
-        text-decoration: none;
+        text-decoration:none;
         color: black;
       }
-    
 
-    
+      #accueil {
+        width: 13em;
+      }
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
 
-    *{box-sizing: border-box }
 
-img{
-
-max-width:100%
+body{
+  background-attachment:fixed;
+  background-repeat : no-repeat;
 
 }
+
 
 
 .slideshow{
@@ -60,6 +55,7 @@ overflow: hidden;
 max-width: 600px;
 margin: 2rem auto;
 position: relative
+
 
 }
     
@@ -168,8 +164,41 @@ animation: barre_progression 25s ease-out infinite;
 	
 	}
 
-.titre_accueil {
+.accueil {
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    box-sizing: content-box;
+    width: 60%;
+    background-color: rgb(61, 61, 61);
+    padding: 1em;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-bottom: 3em;
 }
+
+img{
+  width: 100%;
+}
+
+
+
+  .image img {
+    width: 6em;
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+  }
+  .image:hover img {
+  /* L'image est grossie de 25% */
+  -webkit-transform:scale(1.25); /* Safari et Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* Internet Explorer 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
+  }
