@@ -3,23 +3,22 @@
 <head>
     <title>pokemon donjon mystére explorateur</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="donjon mystère/css/style.css"/>
-    <link rel="stylesheet" href="CSS/css2DM.css"/>
+    <link id="pagestyle" rel="stylesheet" href="CSS/css1DM.css"/>
     <link rel="stylesheet" href="CSS/accueil.css" type="text/css"/>
-    <link rel="stylesheet" href="main_style.css" type="text/css"/>
-    <script type="application/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" href="CSS/main_style.css" type="text/css"/>
+    <script src="js/javascript.js"></script>
     <meta name="description" content="Site d'information et d'actualités sur Pokémon "/>
     <meta name="keywords" content="pokémon donjon mystère, actualités pokémon, blog pokemon"/>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="index.html"> <div class=image><img id="accueil" src="images/pokemon.png"></div> </a></li>
-                    <li><a href="diamant_perle.html"><div class=image><img src="images/jaquette_diamant.jpg"></div></a></li>
-                    <li><a href="thibault.html"><div class=image><img src="images/jaquette_donjon.jpg"></div></a></li>
-                    <li><a href="emeraude.html"> <div class=image><img src="images/emeraude_jacket.jpg"></div> </a></li>
+                    <li><a href="index.html"> <div class=image><img id="accueil" src="images/pokemon.png" alt="logo pokemon"></div> </a></li>
+                    <li><a href="diamant_perle.html"><div class=image><img src="images/jaquette_diamant.jpg" alt="jaquette pokemon diamant"></div></a></li>
+                    <li><a href="thibault.html"><div class=image><img src="images/jaquette_donjon.jpg" alt="jaquette pokemon donjon mystére explorateur du ciel"></div></a></li>
+                    <li><a href="emeraude.html"> <div class=image><img src="images/emeraude_jacket.jpg" alt="jaquette pokemon emeraude"></div> </a></li>
                 </ul>
             </nav>
         </div>
@@ -27,15 +26,15 @@
 
     <div class="contenaire1">
         <div class="logo">
-            <img src="donjon mystère/media/explorateur_de_lombre.png"/>
-            <img src="donjon mystère/media/explorateur_du_temps.png"/>
-            <img src="donjon mystère/media/ciel_Logo.png"/>
+            <img src="images/DM_explorateur_de_lombre.png" alt="logo pokemon donjon mystére explorateur de l'ombre"/>
+            <img src="images/DM_explorateur_du_temps.png" alt="logo pokemon donjon mystére explorateur du temps"/>
+            <img src="images/DM_ciel_Logo.png" alt="logo pokemon donjon mystére explorateur du ciel"/>
         </div>
 
         <div class="description">
             <h2>Pokemon Donjon Mystére : Explorateur de l'Ombre, du Temps et du Ciel</h2>
             <div class="part1">
-                <img src="donjon mystère/media/affiche.jpeg"/>
+                <img src="images/DM_affiche.jpeg" alt="affiche donjon mystére explorateur du ciel"/>
                 <div class="part1_1">
                     Les pokemons donjons mystére sont des jeux solo, où le joueur incarne un humain métamorphosé en pokemon qui vas explorer des donjons pour remplire des quêtes et des missions accompagné d'accolyte. 
                     <br/>
@@ -53,24 +52,23 @@
                     Explorateur du ciel, quand à lui, rajoute du contenue par exemple l'apparition de shaymine. 
                 </div>
                 <div class="part2_2">
-                <img src="donjon mystère/media/in_game3.jpg"/>
-                <img src="donjon mystère/media/in_game1.jpeg"/>
-                <img src="donjon mystère/media/in_game2.jpeg"/>
+                <img src="images/DM_in_game3.jpg" alt="image en jeux de pokemon donjon mystére explorateur"/>
+                <img src="images/DM_in_game1.jpeg" alt="image en jeux de pokemon donjon mystrére explorateur"/>
+                <img src="images/DM_in_game2.jpeg" alt="image en jeux de pokemon donjon mystrére explorateur"/>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="contenaire2">
-        <img class="part3" src="donjon mystère/media/avis.jpg"/>
+        <img class="part3" src="images/DM_avis.jpg" alt="image de promotion de pokemon donjon mystére explorateur"/>
         <div>Mon avis personnel : j'ai adoré ce jeu qui est mon premier jeu pokemon et mon premier jeu DS</div>
     </div>
 
-    <footer>
-        <button id="stylesheet1" > style 1 </button>
-        <button id="stylesheet2" > style 2 </button>
-        
-    </footer>
-
+    <div class="footer">
+        <button id="stylesheet1" onclick="initate();"> style 1 </button>
+        <button id="stylesheet2" onclick="initate();"> style 2 </button>
+    <a href="#header">haut de page</a>
+    </div>
 </body>
 </html>

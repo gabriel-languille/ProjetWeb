@@ -6,8 +6,7 @@ function initate() {
     var style1 = document.getElementById("stylesheet1");
     var style2 = document.getElementById("stylesheet2");
 
-    style1.onclick = swapStyleSheet("/donjon_mystère/css/style.css");
-    style2.onclick = swapStyleSheet("css2DM.css");
-}
+    style1.onclick = function () { swapStyleSheet("CSS/css1DM.css") };
+    style2.onclick = function () { swapStyleSheet("CSS/css2DM.css") }; 
 
-window.onload = initate;
+}
