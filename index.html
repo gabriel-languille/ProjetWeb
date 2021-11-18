@@ -11,6 +11,7 @@
 </head>
 
 <body background="images/background.jpg">
+    
     <div class="navbar">
         <nav>
             <ul>
@@ -25,22 +26,40 @@
     <div class="corps_page">
         <div class="slideshow">
             <ul>
-            <li><img src="images/jeu_platine2.jpg" alt><span>Remake Diamant et Perle annoncé !</span></li>
-            <li><img src="images/jeu_explorateur.jpg" alt><span>Nouvel article sur Pokémon donjon mystère disponible </span></li>
-            <li><img src="images/jeu_emeraude.png" alt><span>Pokemon émeraude aussi a droit à son article !</span></li>
-            <li><img src="images/jeu_unite.jpg" alt><span>Pokemon Unite disponible sur Switch et portable </span></li>
-            <li><img src="images/jeu_arceus.jpg" alt><span>Pokemon arceus se révèle avec un nouveau trailer </span></li>
+            <li><img src="images/jeu_platine2.jpg" id="a"><span>Remake Diamant et Perle annoncé !</span></li>
+            <li><img src="images/jeu_explorateur.jpg" id="b" ><span>Nouvel article sur Pokémon donjon mystère disponible </span></li>
+            <li><img src="images/jeu_emeraude.png" id="c"><span>Pokemon émeraude aussi a droit à son article !</span></li>
+            <li><img src="images/jeu_unite.jpg" id="d"><span>Pokemon Unite disponible sur Switch et portable </span></li>
+            <li><img src="images/jeu_arceus.jpg" id="e"><span>Pokemon arceus se révèle avec un nouveau trailer </span></li>
             </ul>
             <div class="barre_progression">
             </div>
         </div>
         <div class="accueil">
-            <h1>
-                 Donne ton avis sur le site ! 
-
+            <h1 id="pokeinfo">
+                PokeInfo 
             </h1>
         </br>
-            <form id="form" action="mailto:my@e-mail?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+            <p>
+                <h2>Ouverture du site Pokéinfo !!</h2>  </br>
+                Découvre nos articles sur les différents jeux pokémons ainsi que l'actualité de la license.</br>
+                De nouveaux articles sont d'ores et déjà en cours d'écriture !
+            </p>
+
+            
+        </div>
+        
+
+    </div>
+    <footer>
+        <div class="footer-basic">
+            <h1>
+                Donne ton avis sur le site ! 
+
+           </h1>
+       </br>
+            <form id="form" action="mailto:roibrioche@gmail.com" method="post" enctype="text/plain">
+                
                 <p>
                     <label for="prenom">Prénom</label><input id="prenom" type="text" name="prenom" value=" "/>
                     <label for="nom">Nom</label><input id="nom" type="text" name="nom" value=" "/><br/>
@@ -50,6 +69,11 @@
                     <input type="submit" value="Envoyer"/>
                 </p>
             </form>
+
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Accueil</a></li>
+            </ul>
+            <p class="copyright">PokeInfo © 2021</p>   
         </div>
-    </div>
+    </footer>
 </body>
