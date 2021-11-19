@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <title>pokemon donjon mystére explorateur</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
     <meta charset="utf-8"/>
     <link id="pagestyle" rel="stylesheet" href="CSS/css1DM.css"/>
     <link rel="stylesheet" href="CSS/accueil.css" type="text/css"/>
@@ -34,7 +35,7 @@
         <div class="description">
             <h2>Pokemon Donjon Mystére : Explorateur de l'Ombre, du Temps et du Ciel</h2>
             <div class="part1">
-                <img src="images/DM_affiche.jpeg" alt="affiche donjon mystére explorateur du ciel"/>
+                <img id="affiche" src="images/DM_affiche.jpeg" alt="affiche donjon mystére explorateur du ciel"/>
                 <div class="part1_1">
                     Les pokemons donjons mystére sont des jeux solo, où le joueur incarne un humain métamorphosé en pokemon qui vas explorer des donjons pour remplire des quêtes et des missions accompagné d'accolyte. 
                     <br/>
@@ -50,6 +51,8 @@
                     Les jeux explorateur de l'ombre et explorateur du temps sont des jeux similaires, les différence de contenue ne sont donc que minime entre eux.
                     <br/>
                     Explorateur du ciel, quand à lui, rajoute du contenue par exemple l'apparition de shaymine. 
+                    <br/>
+                    <a href="https://fr.wikipedia.org/wiki/Pok%C3%A9mon_Donjon_Myst%C3%A8re_:_Explorateurs_de_l%27ombre_et_Explorateurs_du_temps">wikipedia donjon mystére explorateur </a>
                 </div>
                 <div class="part2_2">
                 <img src="images/DM_in_game3.jpg" alt="image en jeux de pokemon donjon mystére explorateur"/>
@@ -66,9 +69,35 @@
     </div>
 
     <div class="footer">
+        <div>
         <button id="stylesheet1" onclick="initate();"> style 1 </button>
         <button id="stylesheet2" onclick="initate();"> style 2 </button>
-    <a href="#header">haut de page</a>
+        </div>
+    
+    <div class="footer-basic">
+        <h1>
+            Donne ton avis sur le site ! 
+
+       </h1>
+   </br>
+        <form id="form" action="mailto:roibrioche@gmail.com" method="post" enctype="text/plain">
+            
+            <p>
+                <label for="prenom">Prénom</label><input id="prenom" type="text" name="prenom" value=" "/>
+                <label for="nom">Nom</label><input id="nom" type="text" name="nom" value=" "/><br/>
+                <input id="sexeHomme" type="radio" name="sexe" value="homme"/><label for="sexeHomme">Homme</label> 
+                <input id="sexeFemme" type="radio" name="sexe" value="femme"/><label for="sexeFemme">Femme</label><br/>
+                <textarea name="impression" rows="5" cols="50">Donnez vos impressions sur le site...</textarea><br/>
+                <input type="submit" value="Envoyer"/>
+            </p>
+        </form>
+
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Accueil</a></li>
+        </ul>
+        <a href="#header">haut de page</a>
+        <p class="copyright">PokeInfo © 2021</p>   
+    </div>    
     </div>
 </body>
 </html>
