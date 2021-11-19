@@ -8,6 +8,7 @@ h1 {
 .photo_intro {
     display: flex;
     justify-content: left;
+    max-width: 100%;
     max-height: 15em;
     opacity: 90%;
     
@@ -16,8 +17,6 @@ h1 {
 .intro {
     column-count: 2;
 }
-
-
 
 .categorie {
     margin-top: 3em;
@@ -31,30 +30,36 @@ h1 {
 
 .persos {
     display: flex;
-    justify-content: space-evenly;
-    height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    height:250px;
 }
 
 .persos .louka{
-    width: 86px;
+    width: 15%;
+    padding-right: 5%;
 }
 
 .persos .aurore{
-    width: 112px;
+    width: 15%;
+    padding-right: 5%;
 }
 
 .persos .sorbier{
-    width: 80px;
+    width: 15%;
+    padding-right: 5%;
 }
 
 .persos .galaxie{
-    width: 156px;
+    width: 15%;
+    padding-right: 5%;
 }
 
 .persos .rene{
-    width: 70px;
+    width: 15%;
+    padding-right: 5%;
 }
-
 
 body {
     color: black;
@@ -74,4 +79,20 @@ a {
     text-decoration: overline;
     display: flex;
     justify-content: right;
+}
+
+@media (max-width:800px)
+{
+    .persos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 200px;
+    }
+
+    .intro {
+        column-count: 1;
+    }
+
 }
