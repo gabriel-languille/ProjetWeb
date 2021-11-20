@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>ProjetWeb</title>
+        <title>PokeInfo</title>
         <link href="images/favicon.ico" rel="icon" type="image/x-icon">
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="CSS/emeraude.css" type="text/css"/>
+        <link id="pagestyle" rel="stylesheet" href="CSS/emeraude.css"/>
+        <script src="js/switchEm.js"></script>
+        <meta name="description" content="Site d'information et d'actualités sur Pokémon "/>
+        <meta name="keywords" content="pokémon donjon mystère, actualités pokémon, blog pokemon"/>
     </head>
     <body>
         <div class="navbar">
@@ -18,7 +21,9 @@
             </nav>
         </div>
         <div class="boxbase">
-            <a>Votre aventure commence enfin, après avoir mis une horloge à l'heure ett vous être présenté à vos voisins vous entendez des cris venant de la route juste au-dessus. Vous voyez le professeur se faire pourchasser par un medhyen, il vous dit de prendre un pokemon dans la sacoche devant vous.<br> C'est la que vous avez le choix entre les 3 pokemons ci-dessous.</a>
+            <button id="stylesheet1" onclick="initate();"> style 1 </button>
+            <button id="stylesheet2" onclick="initate();"> style 2 </button>
+            <a>Votre aventure commence enfin, après avoir mis une horloge à l'heure et vous être présenté à vos voisins vous entendez des cris venant de la route juste au-dessus. Vous voyez le professeur se faire pourchasser par un medhyen, il vous dit de prendre un pokemon dans la sacoche devant vous.<br> C'est la que vous avez le choix entre les 3 pokemons ci-dessous.</a>
             <div class="separ"><img src="images/gobou.png" alt="gobou"></div>
             <div class="separ"><img src="images/arcko.png" alt="arcko"></div>
             <div class="separ"><img src="images/poussifeu.png" alt="poussifeu"></div>
@@ -158,5 +163,29 @@
             <p> Maintenant que vous êtes devenu (facilement) le maitre de la ligue il vous reste un ultime challenge: Vaincre tous les maitres de chaque bâtiment de combat. Cette foi-ci un vrai challenge s'offre à vous. Voici la carte pour pas se perdre parce que sinon c'est le bordel.</p>
             <img src="images/Zone_de_Combat_Hoenn.png" alt="zone de combat d'Hoenn">
         </div>
-    </body>
+        <footer>
+            <div class="footer-basic">
+                <h1>Donne ton avis sur le site !</h1>
+                <br/>
+                <form id="form" action="mailto:roibrioche@gmail.com" method="post" enctype="text/plain">
+                    
+                    <p><label for="prenom">Prénom</label><input id="prenom" type="text" name="prenom" value=" "/><br/></p>
+    
+                    <p><label for="nom">Nom</label><input id="nom" type="text" name="nom" value=" "/><br/></p>
+    
+                    <p><input id="sexeHomme" type="radio" name="sexe" value="homme"/><label for="sexeHomme">Homme</label> <br/></p>
+    
+                    <p><input id="sexeFemme" type="radio" name="sexe" value="femme"/><label for="sexeFemme">Femme</label><br/></p>
+    
+                    <p><textarea name="impression" rows="5" cols="50">Donnez vos impressions sur le site...</textarea><br/></p>
+    
+                    <p><input type="submit" value="Envoyer"/><br/></p>
+                </form>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Accueil</a></li>
+                </ul>
+                <p class="copyright">PokeInfo © 2021</p>   
+            </div>
+        </footer>
+    </body> 
 </html>

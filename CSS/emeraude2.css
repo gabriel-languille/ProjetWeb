@@ -1,0 +1,199 @@
+:root{
+    --hauteur-menu: 60px;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Fira Sans", Arial, sans-serif;
+  }   
+  
+  nav > ul {
+    display: flex;
+    height: var(--hauteur-menu);
+    list-style-type:none;
+  }
+  
+      
+  nav > ul > li {
+    display: flex;
+    background-color:  #bbbbbb;
+    position: relative;
+    height: 170%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border:solid rgb(9, 126, 223) 3px;
+    border-right:none;
+    border-left:none ;
+  }
+    
+  
+      
+  li a {
+    text-decoration:none;
+    color: rgb(9, 126, 223);
+  }
+  
+  #accueil {
+    width: 13em;
+  }
+      
+  nav{
+    margin-bottom: 3em;
+  }
+  
+  
+  img {
+    max-width: 100%;
+  }
+
+  
+  
+  /* ZOOM IMAGE NAVBAR */
+  .image img {
+    width: 6em;
+    
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+  }
+    
+  .image:hover img {
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+  }
+  
+  /*debut css emeraude*/
+  body{
+    background-image: url("../images/honorball.jpg");
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat : no-repeat;
+    background-size:cover;
+  }
+  
+  .boxbase{
+  font-weight: extra bold;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(0, 0, 0);
+  box-sizing: content-box;
+  width: 60%;
+  background-color: #c8c8c8;
+  padding: 2em;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-bottom: 3em;
+  border-radius: 100px;
+  border:solid rgb(9, 126, 223) 3px
+  }
+  .text-center {
+    text-align: center;
+  }
+  .table-container {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .text-left {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+  }
+  .row2{
+    font-size: 14px;
+  }
+  .margin_top{
+    margin-top:1em;
+  }
+  .item-center{
+    display: flex;
+    justify-content: center;
+  }
+  
+  td {
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .boxbase > p {
+    margin-bottom: 1em;
+  }
+  
+/* FOOTER */
+footer {    
+    position: absolute;
+    width:100%;
+    height:0;
+  }
+  form p{
+    display: flex;
+    justify-content: center;
+  }
+    
+  .footer-basic {
+    background-position: center;
+    border-radius: 100px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color:#c8c8c8;
+    color:#000000;
+    border:solid rgb(9, 126, 223) 3px;
+    
+  }
+  .footer-basic h1 {
+    display: flex;
+    justify-content: center;
+  }
+    
+  .footer-basic ul {
+    display:flex;
+    justify-content: center;
+    list-style:none;
+    text-align:center;
+    font-size:20px;
+    
+  }
+    
+  .footer-basic li {
+    padding: 10px;
+  }
+    
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+    
+  .footer-basic ul a:hover {
+    opacity:0,5;
+  }
+    
+  
+  
+    
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:rgb(255, 255, 255);
+    margin-bottom:0;
+  }
+  
+  /* FIN FOOTER */
+  #pokeinfo{
+    text-decoration: rgb(255, 255, 255) underline;
+  }
