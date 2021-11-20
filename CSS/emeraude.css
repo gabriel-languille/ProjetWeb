@@ -69,6 +69,7 @@ img {
 
 /*debut css emeraude*/
 body {
+  background-image: url("../images/font_emeraude.png");
   background-size: cover;
   background-position: center;
 }
