@@ -104,22 +104,22 @@ img
 
 a:link {
     color: red;
-  }
+}
   
-  a:visited {
+a:visited {
     color: green;
-  }
+}
   
-  a:hover {
+a:hover {
     color: hotpink;
-  }
+}
   
-  a:active {
+a:active {
     color: blue;
-  } 
+} 
 
-  @media (max-width:800px)
-  {
+@media (max-width:800px)
+{
     .part1
     {
         display: flex;
@@ -134,6 +134,6 @@ a:link {
         width: fit-content;
         min-width: 100px;
     }
-  }
+}
 
   
