@@ -40,21 +40,6 @@ body
     margin: 2%;
 }
 
-a:link {
-    color: red;
-}
-  
-a:visited {
-    color: green;
-}
-  
-a:hover {
-    color: hotpink;
-}
-  
-a:active {
-    color: blue;
-} 
 
 @media (max-width:800px)
 {
@@ -129,3 +114,9 @@ footer {
     text-decoration: rgb(255, 255, 255) underline;
   }
   
+  .lien_fin {
+    color: rgb(255, 255, 187);
+    text-decoration: overline;
+    display: flex;
+    justify-content: center;
+}

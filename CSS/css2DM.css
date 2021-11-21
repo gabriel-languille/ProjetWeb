@@ -41,21 +41,6 @@ body
     margin: 2%;
 }
 
-a:link {
-    color: red;
-}
-  
-a:visited {
-    color: green;
-}
-  
-a:hover {
-    color: hotpink;
-}
-  
-a:active {
-    color: blue;
-} 
 
 @media (max-width:800px)
 {
@@ -77,6 +62,8 @@ a:active {
 
 /* FOOTER */
 footer { 
+
+
     width:100%;
     height:0;
     bottom: 0;
@@ -87,8 +74,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-position: center;
     padding:8px ;
     background-color:#c8c8c8;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    width: 50%;
     color:black;
     border:solid rgb(9, 126, 223) 3px;
   }
@@ -130,3 +122,9 @@ footer {
     text-decoration: rgb(255, 255, 255) underline;
   }
   
+  .lien_fin {
+    color: rgb(255, 255, 187);
+    text-decoration: overline;
+    display: flex;
+    justify-content: center ;
+  }

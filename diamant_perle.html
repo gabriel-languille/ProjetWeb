@@ -16,7 +16,7 @@
                 <ul>
                     <li><a href="index.html"> <div class=image><img id="accueil" src="images/pokemon.png" alt="logo pokemon"></div> </a></li>
                     <li><a href="diamant_perle.html"><div class=image><img src="images/jaquette_diamant.jpg" alt="jaquette version diamant"></div></a></li>
-                    <li><a href="thibault.html"><div class=image><img src="images/jaquette_donjon.jpg" alt="jaquette donjon mystere"></div></a></li>
+                    <li><a href="pokemonDM.html"><div class=image><img src="images/jaquette_donjon.jpg" alt="jaquette donjon mystere"></div></a></li>
                     <li><a href="emeraude.html"> <div class=image><img src="images/emeraude_jacket.jpg" alt="jaquette version emeraude"></div> </a></li>
                 </ul>
             </nav>
@@ -65,17 +65,19 @@
         <div class="footer-basic">
             <h1>Donne ton avis sur le site !</h1>
             <br/>
-            <form id="form" action="mailto:roibrioche@gmail.com" method="post" enctype="text/plain">
+            <form id="form" action="mailto:sondagepokeinfo@gmail.com" method="post" enctype="text/plain">
                 
-                <p><label for="prenom">Prénom</label><input id="prenom" type="text" name="prenom" value=" "/><br/></p>
+                <p><label for="prenom">Prénom :</label><input id="prenom" required type="text" name="prenom" value=" "/><br/></p>
 
-                <p><label for="nom">Nom</label><input id="nom" type="text" name="nom" value=" "/><br/></p>
+                <p><label for="nom">Nom :</label><input id="nom" required type="text" name="nom" value=" "/><br/></p>
 
-                <p><input id="sexeHomme" type="radio" name="sexe" value="homme"/><label for="sexeHomme">Homme</label> <br/></p>
+                <p><input type="radio" name="sexe" value="homme" checked/><label for="sexeHomme">Homme</label> <br/></p>
 
-                <p><input id="sexeFemme" type="radio" name="sexe" value="femme"/><label for="sexeFemme">Femme</label><br/></p>
+                <p><input type="radio" name="sexe" value="femme"/><label for="sexeFemme">Femme</label><br/></p>
 
-                <p><textarea name="impression" rows="5" cols="50">Donnez vos impressions sur le site...</textarea><br/></p>
+                <p><label for="email">E-mail :</label><input type="email" required /></p>
+
+                <p><textarea name="impression" required rows="5" cols="50">Entrez votre avis ici !</textarea><br/></p>
 
                 <p><input type="submit" value="Envoyer"/><br/></p>
             </form>
