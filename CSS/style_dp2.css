@@ -89,9 +89,6 @@ align-items: center;
   max-width: 600px;
   max-height: 600px;
   border-radius: 100px;
-
-
-  
 }
 
 .persos > ul {
@@ -159,7 +156,7 @@ footer {
   padding:8px ;
   width: 50%;
   background-color:#c8c8c8;
-  color:#ffffff;
+  color: black;
   border:solid rgb(9, 126, 223) 3px;
   border-radius: 100px;
 
